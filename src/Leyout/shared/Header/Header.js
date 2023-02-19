@@ -4,10 +4,11 @@ import logo from "../../../assets/logo.svg";
 const Header = () => {
   const menuItems = (
     <>
-      <li>
-        <Link to="/" className="font-bold">
-          Home
-        </Link>
+      <li className="font-bold">
+        <Link to="/">Home</Link>
+      </li>
+      <li className="font-bold">
+        <Link to="/login">Login</Link>
       </li>
     </>
   );

@@ -4,7 +4,7 @@ import SweviceCart from "../servic/SweviceCart";
 const Service = () => {
   const [services, setservices] = useState([]);
   useEffect(() => {
-    fetch("Service.json")
+    fetch("http://localhost:5000/services")
       .then((res) => res.json())
       .then((data) => setservices(data));
   }, []);
